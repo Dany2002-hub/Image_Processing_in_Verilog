@@ -4,4 +4,4 @@ This repository contains the Verilog implementation of Image Enhancement Hardwar
 
 1) "image_enhancement.v" contains the design code of all the individual blocks of the Image Enhancement Hardware.
 2) "image_enhancement_tb.v" contains the testbench code to verify the design of our Image Enhancement Hardware.
-3) 
+3) "Script_Image2Txt_Txt2Img.py" contains the python code for converting image to text and text to image.
