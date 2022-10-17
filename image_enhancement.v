@@ -181,24 +181,3 @@ module image_enhancement(inp_data, en, clk, out_data_enhanced,out_data_smothened
     
     
 endmodule
-
-
-
-
-
-
-
-
-//   always@(posedge clk)begin
-//     if (en_out2) begin
-//       out_data_smothened = smothened_matrix[1][1];
-//       if(a1<129 & b1<129) begin
-//          out_data_smothened=smothened_matrix[a1][b1];
-//          a1=a1+1;
-//          if (a1==129) begin
-//            a1=1;
-//            b1=b1+1;
-//          end
-//        end
-//     end
-//   end
