@@ -39,10 +39,7 @@ module image_enhancement_tb();
     i=0;
     clk=1;
 
-    outfile0 = $fopen("C:/Users/vraje/OneDrive/Desktop/VLSI Labs/Q1_Lab1/images_initial.txt","r");
-//    outfile1=$fopen("C:/Users/vraje/OneDrive/Desktop/VLSI Labs/Que1/images_smothened.txt","w");
-//    outfile2=$fopen("C:/Users/vraje/OneDrive/Desktop/VLSI Labs/Que1/images_sharpened.txt","w");
-//    outfile3=$fopen("C:/Users/vraje/OneDrive/Desktop/VLSI Labs/Que1/images_enhanced.txt","w");
+    outfile0 = $fopen("C:/Users/danie/OneDrive/Desktop/VLSI Labs/Q1_Lab1/images_initial.txt","r");  
 
     while (! $feof(outfile0)) begin
       $fscanf(outfile0,"%d\n",inp_data);
@@ -58,7 +55,7 @@ module image_enhancement_tb();
     $fclose(outfile0);
     #1;
     i=0;
-    outfile1=$fopen("C:/Users/vraje/OneDrive/Desktop/VLSI Labs/Q1_Lab1/images_smothened.txt","w");
+    outfile1=$fopen("C:/Users/danie/OneDrive/Desktop/VLSI Labs/Q1_Lab1/images_smothened.txt","w");
     while(!en_out1)begin
     #1;
     end
@@ -72,7 +69,7 @@ module image_enhancement_tb();
     
     #1;
     i=0;
-    outfile2=$fopen("C:/Users/vraje/OneDrive/Desktop/VLSI Labs/Q1_Lab1/images_sharpened.txt","w");
+    outfile2=$fopen("C:/Users/danie/OneDrive/Desktop/VLSI Labs/Q1_Lab1/images_sharpened.txt","w");
     while(!en_out2)begin
       #1;
     end
@@ -86,7 +83,7 @@ module image_enhancement_tb();
     
     #1;
     i=0;
-    outfile3=$fopen("C:/Users/vraje/OneDrive/Desktop/VLSI Labs/Q1_Lab1/images_enhanced.txt","w");
+    outfile3=$fopen("C:/Users/danie/OneDrive/Desktop/VLSI Labs/Q1_Lab1/images_enhanced.txt","w");
     while(!en_out3)begin
       #1;
     end
@@ -106,23 +103,3 @@ module image_enhancement_tb();
     #1 clk=~clk;
 
 endmodule
-
-
-//      if(en_out2) begin
-//      $fwrite(outfile1,"%d\n",out_data_smothened); 
-//      end
-//      $fdisplay(outfile2,"%d\n",out_data_sharpened); 
-//      $fdisplay(outfile3,"%d\n",out_data_enhanced);
-//  initial begin
-    
-//    outfile1=$fopen("C:/Users/vraje/OneDrive/Desktop/VLSI Labs/Que1/images_smothened.txt","w");
-//    if (en_out1)begin
-//    j=0;
-//    while (j<16384) begin
-//      $fwrite(outfile1,"%d\n",out_data_smothened);
-//      j=j+1;
-//    end
-//    $fclose(outfile1);
-//    end
-//  end
-  
