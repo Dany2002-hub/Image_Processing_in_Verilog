@@ -1,5 +1,5 @@
 # Image_Processing_in_Verilog
-This repository contains the Verilog implementation of Image Enhancement Hardware. 
+This repository contains the Verilog implementation of Image Enhancement Hardware. This Verilog code was implemented and simulated on Xilinx Vivado.
 ![2022-10-18 (2)](https://user-images.githubusercontent.com/76448256/196283170-8b131f6c-e7d0-4571-9e72-341c67fb8654.png)
 
 1) "image_enhancement.v" contains the design code of all the individual blocks of the Image Enhancement Hardware.
